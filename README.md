@@ -1,13 +1,13 @@
 
 
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
+![](http://ww3.sinaimg.cn/large/006tNc79ly1g4dhj2dccvj327w0ncals.jpg)
 
 [![Build Status](https://travis-ci.org/qiubaiying/qiubaiying.github.io.svg?branch=master)](https://travis-ci.org/qiubaiying/qiubaiying.github.io)
 [![codebeat badge](https://codebeat.co/badges/5f031df3-f6c1-4ec0-911a-ff6617ca50b9)](https://codebeat.co/projects/github-com-qiubaiying-qiubaiying-github-io-master)
 [![GitHub issues](https://img.shields.io/github/issues/qiubaiying/qiubaiying.github.io.svg?style=flat)](https://github.com/qiubaiying/qiubaiying.github.io/issues)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/home-assistant/home-assistant-iOS/blob/master/LICENSE)
 [![](https://img.shields.io/github/stars/qiubaiying/qiubaiying.github.io.svg?style=social&label=Star)](https://github.com/qiubaiying/qiubaiying.github.io)
-[![](https://img.shields.io/github/forks/qiubaiying/qiubaiying.github.io.svg?style=social&label=Fork)](https://github.com/qiubaiying/qiubaiying.github.io)
+
 
 
 博客的搭建教程修改自 [Hux](https://github.com/Huxpro/huxpro.github.io) 
@@ -92,7 +92,7 @@ tags:
 ### 侧边栏
 
 看右边:
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-side.png)
+![](http://ww4.sinaimg.cn/large/006tNc79ly1g4dhl0uvylj31fs0u0k61.jpg)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
@@ -186,25 +186,6 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 
 博客不仅支持 [Disqus](http://disqus.com) 评论系统,还加入了 [Gitalk](https://gitalk.github.io/) 评论系统，[支持 Markdwon 语法](https://guides.github.com/features/mastering-markdown/)，cool~
 
-#### Disqus
-
-优点：国际比较流行，界面也很大气、简洁，如果有人评论，还能实时通知，直接回复通知的邮件就行了；
-
-缺点：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
-
-> Node：有很多人反映 Disqus 插件加载不出来，可能墙又架高了，有条件的话翻个墙就好了~
-
-**使用：**
-
-**首先**，你需要去注册一个Disqus帐号。**不要直接使用我的啊！**
-
-**其次**，你只需要在下面的 yaml 头文件中设置一下就可以了。
-
-```
-# 评论系统
-# Disqus（https://disqus.com/）
-disqus_username: qiubaiying
-```
 
 #### Gitalk
 

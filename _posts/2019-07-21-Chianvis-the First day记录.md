@@ -4,7 +4,7 @@ title:      Chianvis The First Day # 标题
 subtitle:   数据可视化 #副标题
 date:       2019-07-21				# 时间
 author:     summer					# 作者
-header-img: img/post-bg-os-metro.jpg 	#这篇文章标题背景图片
+header-img: img/15636918444648.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - Chinavis🇨🇳

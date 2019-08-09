@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      利用搭好的框架实践几个小实践 # 标题 
+title:      Some Vue Demos # 标题 
 subtitle:   数据可视化    #副标题
 date:       2019-09-21			# 时间
 author:     summer				# 作者

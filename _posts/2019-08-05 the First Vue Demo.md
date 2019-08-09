@@ -1,12 +1,12 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      利用搭好的框架实践几个小实践 # 标题 
-subtitle:   数据可视化  #副标题
-date:       2019-07-21				# 时间
-author:     summer					# 作者
-header-img: img/post-bg-os-metro.jpg 	#这篇文章标题背景图片
+subtitle:   数据可视化    #副标题
+date:       2019-07-21			# 时间
+author:     summer				# 作者
+header-img: img/post-bg-os-metro.jpg  	#这篇文章标题背景图片
 catalog: true 						# 是否归档
-tags:								#标签
+tags:								   #标签
     - Vue 学习
 ---
 

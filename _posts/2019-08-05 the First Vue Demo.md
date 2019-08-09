@@ -2,7 +2,7 @@
 layout:     post   				    # 使用的布局（不需要改）
 title:      利用搭好的框架实践几个小实践 # 标题 
 subtitle:   数据可视化    #副标题
-date:       2019-07-21			# 时间
+date:       2019-09-21			# 时间
 author:     summer				# 作者
 header-img: img/post-bg-os-metro.jpg  	#这篇文章标题背景图片
 catalog: true 						# 是否归档
@@ -11,8 +11,10 @@ tags:								   #标签
 ---
 
 # 利用搭好的框架实践几个小实践
+
 ## 一个简单的不能再简单的vue例子
 我们在已经搭建好的vue项目中，实现一个从项目已有的Hello World! 跳转至我们自己创建的Hello Vue组件页面的例子。
+
 ### 首先，在已经搭建好的环境的components下新建一个vue文件，作为我们自己的vue组件。 
 ![-w810](/img/blog_img/15650123700773.jpg)
 ### 然后在HelloVue.vue文件中添加以下代码，vue文件的格式分为三个模块，如下图所示，首先时template模板，然后是script标签及代码，最后是style样式。

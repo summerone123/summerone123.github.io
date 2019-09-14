@@ -1,7 +1,7 @@
 
 ---
 layout:     post
-title:     Hadoop之MapReduce WordCount 源码详细解析
+title:     Hadoop之MapReduce_WordCount源码详细解析
 subtitle:   大数据处理
 date:       2018-01-04
 author:     Yi Xia
@@ -10,7 +10,6 @@ catalog: true
 tags:
     - 大数据处理
 ---
-
 
 # Hadoop之MapReduce WordCount 源码详细解析
 ## MapReduce 基本的执行流程

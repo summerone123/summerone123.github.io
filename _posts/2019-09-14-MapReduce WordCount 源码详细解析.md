@@ -1,14 +1,17 @@
+
 ---
-layout:     post
-title:      Hadoop之MapReduce WordCount 源码详细解析
-subtitle:   大数据处理
-date:       2019-09-14
-author:     Yi Xia
-header-img: img/post-bg-BJJ.jpg
-catalog: true
-tags:
+layout:     post   				    # 使用的布局（不需要改）
+title:     Hadoop之MapReduce WordCount 源码详细解析
+ 		# 标题 
+subtitle:   数据可视化 #副标题
+date:       2019-07-21				# 时间
+author:     summer					# 作者
+header-img:img/post-bg-BJJ.jpg 	#这篇文章标题背景图片
+catalog: true 						# 是否归档
+tags:								#标签
     - 大数据处理
 ---
+
 
 # Hadoop之MapReduce WordCount 源码详细解析
 ## MapReduce 基本的执行流程

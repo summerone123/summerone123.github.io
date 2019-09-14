@@ -9,6 +9,7 @@ catalog: true
 tags:
     - 大数据处理
 ---
+
 # MapReduce 中block 和 split 的区别
 
 ### MapReduce的流程

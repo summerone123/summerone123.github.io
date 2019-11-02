@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:     Spark with IDEA
+title:   Spark with IDEA
 subtitle:   大数据处理
 date:       2019-10-18
 author:     Yi Xia

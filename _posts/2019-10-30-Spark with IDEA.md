@@ -16,7 +16,8 @@ Maven项目对象模型(POM)，是一个项目管理工具可以通过一小段�
 我们具体看一下是如何配置使用的?
 ## Maven
 因为搭建这个Spark with IDEA，以前从没摸过 maven，这次借此来学了一下基础知识
-具体的介绍见我另一篇 blog[]()
+具体的介绍见我另一篇 blog
+[http://summerone.xyz/2019/10/18/IDEA-with-Maven/](http://summerone.xyz/2019/10/18/IDEA-with-Maven/)
 maven是一款优秀的服务构建工具，基于约定优于配置原则，提供标准的服务构建流程。maven的优点不仅限于服务构建，使用maven能够做到高效的依赖管理，并且提供有中央仓库可以完成绝大多数依赖的下载使用。
 
 

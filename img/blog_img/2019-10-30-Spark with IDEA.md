@@ -7,9 +7,8 @@ author:     Yi Xia
 header-img: img/post-bg-BJJ.jpg
 catalog: true
 tags:
-    - 大数据处理
+    - Java
 ---
-
 
 # Spark with IDEA
 IDEA 全称 IntelliJ IDEA，是java语言开发的集成环境，IntelliJ在业界被公认为最好的Java开发工具之一, IDEA是JetBrains公司的产品,现在有逐步取代老牌Java开发工具Eclipse的趋势.那本人也是从Eclipse 转到IDEA.那刚转换过来时,确实很不适应,不过好在坚持使用了几天后,确实感觉IntelliJ IDEA比Eclipse更加智能.

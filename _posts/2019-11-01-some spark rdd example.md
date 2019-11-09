@@ -94,4 +94,125 @@ object student {
 ```
 ### 程序及其结果
 ![-w1440](/img/blog_img/15726189633645.jpg)
-![-w1315](/img/blog_img/15726195431952.jpg)
+
+## 2.实现数据去重
+对于两个输入文件A和B，编写Spark独立应用程序，对两个文件进行合并，并剔除其中重复的内容，得到一个新文件C。
+### 输入
+输入文件A的样例如下：
+20170101    x
+20170102    y
+20170103    x
+20170104    y
+20170105    z
+20170106    z
+输入文件B的样例如下：
+20170101    y
+20170102    y
+20170103    x
+20170104    z
+20170105    y
+### 输出
+![-w1440](/img/blog_img/15732790075604.jpg)
+
+### 源码及解析
+
+```scala
+import org.apache.spark.{SparkConf, SparkContext}
+object merge {
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setMaster("local").setAppName("reduce")
+    val sc = new SparkContext(conf)
+    sc.setLogLevel("ERROR")
+    //获取数据
+    val two = sc.textFile("file:///Users/summerone/Desktop/spark/merge")
+    two.filter(_.trim().length>0) //需要有空格。
+      .map(line=>(line.trim,""))//全部值当key，(key value,"")
+      .groupByKey()//groupByKey,过滤重复的key value ，发送到总机器上汇总
+      .sortByKey() //按key value的自然顺序排序
+      .keys.collect().foreach(println) //所有的keys变成数组再输出
+    
+
+  }
+}
+
+```
+
+## 3.求平均值问题
+每个输入文件表示班级学生某个学科的成绩，每行内容由两个字段组成，第一个是学生名字，第二个是学生的成绩；编写Spark独立应用程序求出所有学生的平均成绩，并输出到一个新文件中。
+### 输入
+Algorithm成绩：
+小明 92
+小红 87
+小新 82
+小丽 90
+Database成绩：
+小明 95
+小红 81
+小新 89
+小丽 85
+Python成绩：
+小明 82
+小红 83
+小新 94
+小丽 91
+### 输出
+![-w1440](/img/blog_img/15732794596327.jpg)
+### 源码解解析
+
+```scala
+import org.apache.spark.{SparkConf, SparkContext}
+
+object pingjunzhi {
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setMaster("local").setAppName("reduce")
+    val sc = new SparkContext(conf)
+    sc.setLogLevel("ERROR")
+
+    val fourth = sc.textFile("file:///Users/summerone/Desktop/spark/pingjunzhi")
+
+    val res = fourth.filter(_.trim().length>0).map(line=>(line.split(" ")(0).trim(),line.split(" ")(1).trim().toInt)).groupByKey().map(x => {
+      var num = 0.0
+      var sum = 0
+      for(i <- x._2){
+        sum = sum + i
+        num = num +1
+      }
+      val avg = sum/num
+      val format = f"$avg%1.2f".toDouble
+      (x._1,format)
+    }).collect.foreach(x => println(x._1+"\t"+x._2))
+  }
+}
+```
+
+## 4.Top N
+
+求 TopN
+### 输入
+filetext1：
+1,1768,50,155 2,1218, 600,211 3,2239,788,242 4,3101,28,599 5,4899,290,129 6,3110,54,12017,4436,259,877 8,2369,7890,27filetext2：
+100,4287,226,233 101,6562,489,124 102,1124,33,17 103,3267,159,179 104,4569,57,125105,1438,37,116### 输出
+
+![-w1552](/img/blog_img/15724234435017.jpg)将 打的jar 包在集群上运行
+![-w1440](/img/blog_img/15724233597915.jpg)```scala
+import org.apache.spark.{SparkConf, SparkContext}
+object TopN {
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setAppName("TopN").setMaster("local")
+    val sc = new SparkContext(conf)
+    sc.setLogLevel("ERROR")
+    val lines = sc.textFile("hdfs://10.113.10.11:9000/spark/TopN",2)
+    var num = 0;
+    val result = lines.filter(line => (line.trim().length > 0) && (line.split(",").length == 4))
+      .map(_.split(",")(2))
+      .map(x => (x.toInt,""))
+      .sortByKey(false)
+      .map(x => x._1).take(5)
+      .foreach(x => {
+        num = num + 1
+        println(num + "\t" + x)
+      })
+  }
+}
+
+```

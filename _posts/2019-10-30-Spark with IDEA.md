@@ -207,6 +207,8 @@ import org.apache.spark.{SparkConf, SparkContext}object TopN {  def main(args:
 - 注意集群的 scala 的版本和你的本机的 scala 的版本应该是一样的
 ![-w777](/img/blog_img/15726061209304.jpg)
 
+**此时的 scala 的版本切记是开启 spark 是所显示的 scala 的版本，因为即使你 把scala什么的都配好了，spark 还是用以前的版本（我的是 2.11.12，而装的 2.13.1 配置好了 spark 也没用，百度一下，有好多原因，所以还是乖乖用默认了**
+
 - java.lang.NoClassDefFoundError: org/apache/spark/streaming/dstream/DStream 
 
 ```shell

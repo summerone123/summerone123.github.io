@@ -2,13 +2,14 @@
 layout:     post
 title:     Spark rdd 的例子合集
 subtitle:   大数据处理
-date:       2019-10-18
+date:       2019-11-9
 author:     Yi Xia
 header-img: img/post-bg-map.jpg
 catalog: true
 tags:
     - Java
 ---
+
 # Spark rdd 的例子合集
 ## 1.spark-shell交互式编程
 我们的数据集为data1.txt，该数据集包含了某大学计算机系的成绩，数据格式如下所示：

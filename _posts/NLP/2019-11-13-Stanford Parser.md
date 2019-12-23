@@ -9,6 +9,7 @@ catalog: true
 tags:
     - nlp
 ---
+
 #Stanfordparser
 Stanford Parser顾名思义是由斯坦福大学自然语言小组开发的开源句法分析器，是基于概率统计句法分析的一个Java实现。该句法分析器目前提供了5个中文文法的实现。他的优点在于：
 
@@ -46,7 +47,7 @@ import jieba
 from nltk.parse import stanford
 import os
 
-target_str="中国人民解放军信息工程大学以原信息工程大学、外国语学院为基础重建，隶属战略支援部队，校区位于河南省郑州市、洛阳市，担负着为国防和军队现代化建设培养信息领域高层次人才的重任。学校有80余年的办学历史，前身是军委工程学校第二部、第三部和东北民主联军测绘学校，先后为国家和军队培养20余万高素质人才。学校是国务院学位委员会授权的博士、硕士学位授予单位，是首批国家一流网络安全学院建设示范项目高校，军队唯一的国家网络安全人才培养基地；是国家非通用语人才培养基地、全军出国人员外语培训基地、外国军事留学生汉语培训基地。"
+target_str="***************************。"
 seg_list=jieba.cut(target_str,cut_all=False,HMM=True)
 #用空格再重新拼接分词的结果，因为Stanford Parser的句法分析器接受的输入是分词完后以空格隔开的句子。
 seg_str=' '.join(seg_list)
@@ -79,132 +80,7 @@ for line in sentence:
 ```
 
 
-```
-<list_iterator object at 0x10d331860>
-(ROOT
-  (IP
-    (IP
-      (NP
-        (NR 中国)
-        (NN 人民)
-        (NN 解放军信息工程大学)
-        (NN 以原)
-        (NN 信息工程)
-        (NN 大学)
-        (PU 、)
-        (NN 外国语)
-        (NN 学院))
-      (VP
-        (VP (PP (P 为) (NP (NN 基础))) (VP (VV 重建)))
-        (PU ，)
-        (VP (VV 隶属) (NP (NN 战略) (NN 支援) (NN 部队)))))
-    (PU ，)
-    (IP
-      (NP (NN 校区))
-      (VP
-        (VP
-          (VV 位于)
-          (NP (NP (NP (NR 河南省)) (NP (NN 郑州市))) (PU 、) (NP (NN 洛阳市))))
-        (PU ，)
-        (VP
-          (VV 担负)
-          (AS 着)
-          (NP
-            (CP
-              (IP
-                (VP
-                  (PP
-                    (P 为)
-                    (NP
-                      (NP (NN 国防) (CC 和) (NN 军队) (NN 现代化))
-                      (NP (NN 建设))))
-                  (VP (VV 培养) (NP (NN 信息) (NN 领域) (NN 高层次) (NN 人才)))))
-              (DEC 的))
-            (NP (NN 重任))))))
-    (PU 。)
-    (IP
-      (NP (NN 学校))
-      (VP
-        (VE 有)
-        (NP
-          (DNP (NP (QP (CD 80)) (NP (NN 余年))) (DEG 的))
-          (NP (NN 办学) (NN 历史)))))
-    (PU ，)
-    (IP
-      (NP (NN 前身))
-      (VP
-        (VC 是)
-        (NP
-          (NP
-            (NP (NN 军委) (NN 工程))
-            (NP (NN 学校))
-            (QP (OD 第二部) (PU 、) (OD 第三部)))
-          (CC 和)
-          (NP (NN 东北民主联军) (NN 测绘) (NN 学校)))))
-    (PU ，)
-    (IP
-      (VP
-        (ADVP (AD 先后))
-        (PP (P 为) (NP (NN 国家) (CC 和) (NN 军队)))
-        (VP
-          (VV 培养)
-          (NP
-            (QP (CD 20))
-            (NP (QP (CD 余万)) (NP (NN 高素质)))
-            (NP (NN 人才))))))
-    (PU 。)
-    (IP
-      (NP (NN 学校))
-      (VP
-        (VC 是)
-        (IP
-          (NP
-            (DNP (NP (NN 国务院学位委员会) (NN 授权)) (DEG 的))
-            (NP (NN 博士) (PU 、) (NN 硕士学位)))
-          (VP (VV 授予) (NP (NN 单位))))))
-    (PU ，)
-    (IP
-      (VP
-        (VC 是)
-        (NP
-          (NP
-            (NP (NN 首批) (NN 国家))
-            (ADJP (JJ 一流))
-            (NP (NN 网络安全) (NN 学院) (NN 建设) (NN 示范)))
-          (NP (NN 项目) (NN 高校)))))
-    (PU ，)
-    (IP
-      (NP (NN 军队))
-      (NP (DNP (ADJP (JJ 唯一)) (DEG 的)) (NP (NN 国家) (NN 网络安全)))
-      (VP
-        (VV 人才培养)
-        (NP
-          (NP (NN 基地))
-          (PU ；)
-          (PRN
-            (VP
-              (VP (VC 是) (NP (NN 国家)))
-              (VP
-                (VC 非)
-                (NP
-                  (NR 通用)
-                  (NN 语)
-                  (NN 人才培养)
-                  (NN 基地)
-                  (PU 、)
-                  (NN 全军)
-                  (NN 出国人员)
-                  (NN 外语)
-                  (NN 培训基地)
-                  (PU 、)
-                  (NN 外国)
-                  (NN 军事)
-                  (NN 留学生)
-                  (NN 汉语)
-                  (NN 培训基地))))))))
-    (PU 。)))
 
-```
 ![-w1547](/img/blog_img/15736227815996.jpg)
 
 

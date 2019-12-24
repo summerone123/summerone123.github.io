@@ -4,7 +4,7 @@ title:     Spark 完全分布式搭建
 subtitle:   大数据处理
 date:       2019-10-16
 author:     Yi Xia
-header-img: img/post-bg-BJJ.jpg
+header-img: img/post-bg-map.jpg
 catalog: true
 tags:
     - 大数据处理

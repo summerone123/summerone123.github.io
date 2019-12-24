@@ -1,20 +1,22 @@
 ---
 
 layout:     post
-title:      The first KG (Knowledgable Graph)
+title:      cognization on KG
 subtitle:   心得记录
 date:       2019-12-23
 author:     Yi Xia
-header-img: img/post-bg-BJJ.jpg
+header-img: img/post-bg-map.jpg
 catalog: true
 tags:
     - 知识图谱
 ---
 
 # 知识图谱:一种从文本中挖掘信息的强大数据科学技术
+
 ## 概述
 >![-w673](/img/blog_img/15771047429633.jpg) 
 因为自己下学期要和导师做毕业设计，方向是知识图谱，所以这次借此机会想要了解一下相关知识，同时自己也开始做了一个基于图数据库的小型知识图谱系统，详情可以看另一篇。
+或者直接上我的 blog 上观看，我将这片心得和实践部分都上传到我的 blog上了[http://summerone.xyz/2019/12/26/The-first-KG/](http://summerone.xyz/2019/12/26/The-first-KG/)
 因为能力有限，刚开始接触这方面知识，许多都是吸收并理解网上其他的一些观点，所以对KG的认识也只是停留在最浅层的地方，若有什么错误的见解，还请老师及时指正😅。
 ## 正文
 ### 知识图谱的介绍

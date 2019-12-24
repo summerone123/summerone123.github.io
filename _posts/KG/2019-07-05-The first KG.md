@@ -5,13 +5,13 @@ title:      The first KG (Knowledgable Graph)
 subtitle:   心得记录
 date:       2019-12-26
 author:     Yi Xia
-header-img: img/post-bg-BJJ.jpg
+header-img: img/post-bg-map.jpg
 catalog: true
 tags:
     - 知识图谱
 ---
 #  The first KG (Knowledgable Graph)
-> 基于图数据库实践股票数据的知识图谱
+> 基于图数据库实践股票数据的知识图谱（对于理论部分，可见我的另一篇 blog [http://summerone.xyz/2019/12/23/cognization-on-KG/](http://summerone.xyz/2019/12/23/cognization-on-KG/)）
 
 ## 知识的爬取
 

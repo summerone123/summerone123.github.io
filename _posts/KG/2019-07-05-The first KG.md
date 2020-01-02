@@ -10,6 +10,7 @@ catalog: true
 tags:
     - 知识图谱
 ---
+
 #  The first KG (Knowledgable Graph)
 > 基于图数据库实践股票数据的知识图谱（对于理论部分，可见我的另一篇 blog [http://summerone.xyz/2019/12/23/cognization-on-KG/](http://summerone.xyz/2019/12/23/cognization-on-KG/)）
 

@@ -35,7 +35,7 @@ tags:								#标签
 ![-w1440](/img/blog_img/15781044689608.jpg)
 #### 分析过程
 - 分析恐怖组织比较倾向的攻击方式及目标及由此带来的伤亡率
-<div align=center>![-w438](/img/blog_img/15781064276961.jpg)
+<div align=center>![-w438](/img/blog_img/15781064276961.jpg)</div>
 
 - 分析城市受到攻击的死伤情况及攻击数
 <div align=center>![-w403](/img/blog_img/15781066479235.jpg)
